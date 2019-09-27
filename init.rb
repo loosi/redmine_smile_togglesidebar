@@ -44,7 +44,7 @@ if this_plugin
 end
 
 
-rails_dispatcher.to_prepare do
+ActiveSupport::Reloader.to_prepare do
   ::Rails.logger.info "o=>\\__ #{plugin_name} V#{plugin_version}"
 
   #######################
